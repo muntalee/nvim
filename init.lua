@@ -1,0 +1,5 @@
+require('plugins')
+require('keybind')
+require('clipboard')
+require('theme')
+require('base')
