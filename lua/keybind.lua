@@ -21,3 +21,5 @@ keymap('n', '<', '<C-w><', opts)
 
 keymap('n', 'y', '"+y', opts)
 keymap('v', 'y', '"+y', opts)
+
+keymap('n', '<leader><Shift>t', ':NvimTreeToggle<cr>', opts)

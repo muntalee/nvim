@@ -4,8 +4,11 @@ return require('packer').startup(function(use)
   -- Important Plugins
   use 'godlygeek/tabular'
   use 'jiangmiao/auto-pairs'
-  use 'scrooloose/nerdtree'
   use { 'neoclide/coc.nvim', branch = 'release' }
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
   -- Themes
   use 'tomasr/molokai'
   use 'overcache/NeoSolarized'
@@ -14,14 +17,10 @@ return require('packer').startup(function(use)
   use { 'dracula/vim', as = 'dracula' }
   use 'henrynewcomer/vim-theme-papaya'
   use 'nlknguyen/papercolor-theme'
+  use 'folke/tokyonight.nvim'
   -- Icons
   use 'ryanoasis/vim-devicons'
   use 'kyazdani42/nvim-web-devicons'
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  }
-  use 'folke/tokyonight.nvim'
   -- Web Dev
   use 'mattn/emmet-vim'
   use 'alvan/vim-closetag'
