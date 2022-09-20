@@ -1,6 +1,5 @@
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-
   -- Important Plugins
   use 'godlygeek/tabular'
   use 'jiangmiao/auto-pairs'

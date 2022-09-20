@@ -17,6 +17,11 @@ vim.g.mapleader = ";"
 -- Do not save when switching buffers
 -- o.hidden = true
 
+--
+vim.scriptencoding = 'utf-8'
+vim.opt.encoding = 'utf-8'
+vim.opt.fileencoding = 'utf-8'
+
 -- Decrease update time
 o.timeoutlen = 500
 o.updatetime = 200
@@ -68,12 +73,6 @@ o.splitbelow = true
 
 -- Mouse
 opt.mouse = "a"
-
--- Templates
-vim.cmd("autocmd BufNewFile *.cpp 0r ~/.config/nvim/templates/template.cpp")
-vim.cmd("autocmd BufNewFile *.java 0r ~/.config/nvim/templates/template.java")
-vim.cmd("autocmd BufNewFile *.c 0r ~/.config/nvim/templates/template.c")
-vim.cmd("autocmd BufNewFile *.py 0r ~/.config/nvim/templates/template.py")
 
 -- Emmet
 vim.g.user_emmet_mode = 'n'

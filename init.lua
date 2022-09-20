@@ -1,5 +1,6 @@
 require('plugins')
-require('keybind')
+require('maps')
 require('clipboard')
 require('theme')
 require('base')
+require('template')
