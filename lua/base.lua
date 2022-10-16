@@ -12,7 +12,7 @@ vim.cmd('syntax on')
 vim.api.nvim_command('filetype plugin indent on')
 
 -- Leader key
-vim.g.mapleader = ";"
+vim.g.mapleader = ' '
 
 -- Do not save when switching buffers
 -- o.hidden = true
@@ -27,14 +27,13 @@ o.timeoutlen = 500
 o.updatetime = 200
 
 -- Number of screen lines to keep above and below the cursor
-o.scrolloff = 8
-
--- Better editor UI
-o.number = true
+o.scrolloff = 8 -- Better editor UI o.number = true
 o.numberwidth = 2
 o.relativenumber = true
+o.number = true
 o.signcolumn = 'yes'
-o.cursorline = false
+o.cursorline = true
+o.cursorcolumn = true
 
 -- Better editing experience
 o.expandtab = true
@@ -47,9 +46,8 @@ o.autoindent = true
 o.wrap = false
 o.textwidth = 300
 o.tabstop = 2
-o.conceallevel = 2
 o.shiftwidth = 2
-o.softtabstop = -1 -- If negative, shiftwidth value is used
+o.softtabstop = 2
 
 -- Makes neovim and host OS clipboard play nicely with each other
 o.clipboard = 'unnamedplus'

@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/Users/munta/.local/share/nvim/site/pack/packer/start/molokai",
     url = "https://github.com/tomasr/molokai"
   },
+  ["nord.nvim"] = {
+    loaded = true,
+    path = "/Users/munta/.local/share/nvim/site/pack/packer/start/nord.nvim",
+    url = "https://github.com/shaunsingh/nord.nvim"
+  },
   ["nvim-compe"] = {
     loaded = true,
     path = "/Users/munta/.local/share/nvim/site/pack/packer/start/nvim-compe",

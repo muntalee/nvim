@@ -8,15 +8,14 @@ return require('packer').startup(function(use)
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
-  -- Themes
+ -- Themes
   use 'tomasr/molokai'
   use 'overcache/NeoSolarized'
   use 'tomasiser/vim-code-dark'
-  use 'morhetz/gruvbox'
-  use { 'dracula/vim', as = 'dracula' }
-  use 'henrynewcomer/vim-theme-papaya'
+  use 'morhetz/gruvbox' use { 'dracula/vim', as = 'dracula' } use 'henrynewcomer/vim-theme-papaya'
   use 'nlknguyen/papercolor-theme'
   use 'folke/tokyonight.nvim'
+  use 'shaunsingh/nord.nvim'
   -- Icons
   use 'ryanoasis/vim-devicons'
   use 'kyazdani42/nvim-web-devicons'
@@ -24,6 +23,7 @@ return require('packer').startup(function(use)
   use 'mattn/emmet-vim'
   use 'alvan/vim-closetag'
   use 'tpope/vim-surround'
+  use 'norcalli/nvim-colorizer.lua'
   -- Multi Cursor
   use 'timlentse/vim-multiple-cursors'
   use 'tpope/vim-vinegar'
