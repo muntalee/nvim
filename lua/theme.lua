@@ -1,6 +1,15 @@
-vim.opt.guifont = { "JetBrains Mono", "h64" }
-vim.cmd 'colorscheme dracula'
+-- for neovide
+vim.opt.guifont = { "JetBrainsMono Nerd Font", "h64" }
+-- vim.g.neovide_transparency = 0.0
+-- vim.g.transparency = 0.8
+-- vim.cmd [[let g:neovide_background_color = '#0f1117'.printf('%x', float2nr(255 * g:transparency))]]
 
+-- colorscheme
+vim.cmd [[colorscheme tokyonight-moon]]
+vim.cmd [[set termguicolors]]
+vim.g.dashboard_default_executive = 'telescope'
+
+-- lualine setup
 require('lualine').setup {
   options = {
     icons_enabled = false,

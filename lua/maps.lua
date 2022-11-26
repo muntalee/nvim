@@ -1,4 +1,8 @@
 local keymap = vim.api.nvim_set_keymap
+
+-- Emmet
+vim.g.user_emmet_mode = 'n'
+vim.g.user_emmet_leader_key = ','
 local opts = { noremap = true }
 
 -- Disable arrow keys
@@ -8,8 +12,8 @@ keymap('', '<Left>', '<Nop>', {})
 keymap('', '<Right>', '<Nop>', {})
 
 -- Pressing ii to escape
-keymap('i', 'ii', '<Esc>', {})
-keymap('v', 'ii', '<Esc>', {})
+-- keymap('i', 'ii', '<Esc>', {})
+-- keymap('v', 'ii', '<Esc>', {})
 
 keymap('', 'gf', '<C-W>gf', {})
 
@@ -35,4 +39,7 @@ keymap('n', 'y', '"+y', opts)
 keymap('v', 'y', '"+y', opts)
 
 -- Tree
-keymap('n', '<leader><Shift>t', ':NvimTreeToggle<cr>', opts)
+keymap('n', 'st', ':NvimTreeToggle<cr>', opts)
+
+-- show recent files
+keymap('n', 'sr', ':Telescope oldfiles<cr>', opts)

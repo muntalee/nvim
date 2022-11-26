@@ -8,17 +8,19 @@ return require('packer').startup(function(use)
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
- -- Themes
-  use 'tomasr/molokai'
-  use 'overcache/NeoSolarized'
+  use 'christoomey/vim-tmux-navigator'
+  -- Themes
   use 'tomasiser/vim-code-dark'
-  use 'morhetz/gruvbox' use { 'dracula/vim', as = 'dracula' } use 'henrynewcomer/vim-theme-papaya'
-  use 'nlknguyen/papercolor-theme'
+  use 'morhetz/gruvbox' use { 'dracula/vim', as = 'dracula' }
+  use 'henrynewcomer/vim-theme-papaya'
   use 'folke/tokyonight.nvim'
   use 'shaunsingh/nord.nvim'
+  use 'bluz71/vim-nightfly-guicolors'
   -- Icons
   use 'ryanoasis/vim-devicons'
   use 'kyazdani42/nvim-web-devicons'
+  -- Tree
+  use 'nvim-tree/nvim-tree.lua'
   -- Web Dev
   use 'mattn/emmet-vim'
   use 'alvan/vim-closetag'
@@ -38,5 +40,8 @@ return require('packer').startup(function(use)
     -- or                            , branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  -- file explorer
   use 'nvim-telescope/telescope-file-browser.nvim'
+  -- dashboard
+  use 'glepnir/dashboard-nvim'
 end)

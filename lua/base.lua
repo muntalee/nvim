@@ -1,4 +1,4 @@
--- Edited by Munta
+-- Edited by @muntalee
 -- Config was built using the following config:
 -- https://github.com/numToStr/dotfiles/tree/master/neovim/.config/nvim/
 
@@ -13,6 +13,7 @@ vim.api.nvim_command('filetype plugin indent on')
 
 -- Leader key
 vim.g.mapleader = ' '
+vim.cmd[[nnoremap <SPACE> <Nop>]]
 
 -- Do not save when switching buffers
 -- o.hidden = true
@@ -60,7 +61,6 @@ o.smartcase = true
 o.backup = false
 o.swapfile = false
 o.undofile = true
-o.undodir = '/tmp/'
 
 -- Remember 50 items in commandline history
 o.history = 50
@@ -71,7 +71,3 @@ o.splitbelow = true
 
 -- Mouse
 opt.mouse = "a"
-
--- Emmet
-vim.g.user_emmet_mode = 'n'
-vim.g.user_emmet_leader_key = ','

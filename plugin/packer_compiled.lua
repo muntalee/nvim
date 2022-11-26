@@ -74,11 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  NeoSolarized = {
-    loaded = true,
-    path = "/Users/munta/.local/share/nvim/site/pack/packer/start/NeoSolarized",
-    url = "https://github.com/overcache/NeoSolarized"
-  },
   ["auto-pairs"] = {
     loaded = true,
     path = "/Users/munta/.local/share/nvim/site/pack/packer/start/auto-pairs",
@@ -88,6 +83,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/munta/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
+  },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/Users/munta/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
   },
   dracula = {
     loaded = true,
@@ -109,15 +109,15 @@ _G.packer_plugins = {
     path = "/Users/munta/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  molokai = {
-    loaded = true,
-    path = "/Users/munta/.local/share/nvim/site/pack/packer/start/molokai",
-    url = "https://github.com/tomasr/molokai"
-  },
   ["nord.nvim"] = {
     loaded = true,
     path = "/Users/munta/.local/share/nvim/site/pack/packer/start/nord.nvim",
     url = "https://github.com/shaunsingh/nord.nvim"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/Users/munta/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-compe"] = {
     loaded = true,
@@ -153,11 +153,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/munta/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
-  },
-  ["papercolor-theme"] = {
-    loaded = true,
-    path = "/Users/munta/.local/share/nvim/site/pack/packer/start/papercolor-theme",
-    url = "https://github.com/nlknguyen/papercolor-theme"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -204,6 +199,11 @@ _G.packer_plugins = {
     path = "/Users/munta/.local/share/nvim/site/pack/packer/start/vim-multiple-cursors",
     url = "https://github.com/timlentse/vim-multiple-cursors"
   },
+  ["vim-nightfly-guicolors"] = {
+    loaded = true,
+    path = "/Users/munta/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors",
+    url = "https://github.com/bluz71/vim-nightfly-guicolors"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/munta/.local/share/nvim/site/pack/packer/start/vim-surround",
@@ -213,6 +213,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/munta/.local/share/nvim/site/pack/packer/start/vim-theme-papaya",
     url = "https://github.com/henrynewcomer/vim-theme-papaya"
+  },
+  ["vim-tmux-navigator"] = {
+    loaded = true,
+    path = "/Users/munta/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
+    url = "https://github.com/christoomey/vim-tmux-navigator"
   },
   ["vim-vinegar"] = {
     loaded = true,
